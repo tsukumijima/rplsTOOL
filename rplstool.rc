@@ -1,0 +1,290 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\rplstool.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""l.JPN\\afxres.rc""      // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\rplstool.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "バージョン情報 rplsTOOL"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "rplsTOOL, Version 2.10",IDC_TOOLNAME1,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_TOOLNAME2,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_RPLSTOOL_DIALOG DIALOGEX 0, 0, 318, 389
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "rplsTOOL"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,203,368,50,14
+    PUSHBUTTON      "終了",IDCANCEL,261,368,50,14
+    PUSHBUTTON      "元に戻す",IDC_RELOAD,7,368,50,14
+    EDITTEXT        IDC_FNAME,7,7,245,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "ファイル参照",IDC_FSELECT,261,7,50,14
+    GROUPBOX        "ファイル情報",IDC_TEXTFINFO,7,26,304,334
+    CTEXT           "録画日時",IDC_STATIC,16,41,32,14,SS_CENTERIMAGE
+    CTEXT           "録画期間",IDC_STATIC,16,66,32,14,SS_CENTERIMAGE
+    CTEXT           "メーカーID",IDC_STATIC,16,91,32,14,SS_CENTERIMAGE
+    CTEXT           "メーカー機種コード",IDC_STATIC,91,91,64,14,SS_CENTERIMAGE
+    CTEXT           "放送局名",IDC_STATIC,16,116,32,14,SS_CENTERIMAGE
+    CTEXT           "チャンネル番号",IDC_STATIC,189,116,53,14,SS_CENTERIMAGE
+    CTEXT           "番組名",IDC_STATIC,16,141,32,14,SS_CENTERIMAGE
+    CTEXT           "番組内容",IDC_STATIC,16,166,32,14,SS_CENTERIMAGE
+    CTEXT           "内容詳細",IDC_TEXTPEXTEND,16,211,32,14,SS_CENTERIMAGE
+    CTEXT           "番組ジャンル",IDC_TEXTPGENRE,12,304,38,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_RECYEAR,56,41,30,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_RECMONTH,106,41,15,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_RECDAY,141,41,15,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_RECHOUR,181,41,15,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_RECMIN,216,41,15,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_RECSEC,251,41,15,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DURHOUR,56,66,15,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DURMIN,96,66,15,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DURSEC,131,66,15,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TIMEZONE,241,66,22,14,ES_CENTER | ES_AUTOHSCROLL
+    CTEXT           "タイムゾーン",IDC_STATIC,197,66,37,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_MAKERID,56,91,30,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MODELCODE,154,91,30,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHANNELNAME,56,116,123,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHANNELNUM,241,116,30,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PNAME,56,141,245,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PDETAIL,56,166,245,36,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_PEXTEND,56,211,245,84,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    COMBOBOX        IDC_GENREL,56,304,118,12,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GENREM,182,304,118,12,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "年",IDC_STATIC,91,41,8,14,SS_CENTERIMAGE
+    CTEXT           "月",IDC_STATIC,126,41,8,14,SS_CENTERIMAGE
+    CTEXT           "日",IDC_STATIC,161,41,8,14,SS_CENTERIMAGE
+    CTEXT           "時",IDC_STATIC,201,41,8,14,SS_CENTERIMAGE
+    CTEXT           "分",IDC_STATIC,236,41,8,14,SS_CENTERIMAGE
+    CTEXT           "秒",IDC_STATIC,271,41,8,14,SS_CENTERIMAGE
+    CTEXT           "時間",IDC_STATIC,75,66,15,14,SS_CENTERIMAGE
+    CTEXT           "分",IDC_STATIC,116,66,8,14,SS_CENTERIMAGE
+    CTEXT           "秒",IDC_STATIC,151,66,8,14,SS_CENTERIMAGE
+    CTEXT           "放送種別",IDC_TEXTRECSRC,197,91,38,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_RECSRC,241,91,60,12,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GENREL2,56,320,118,12,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GENREM2,182,320,118,12,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GENREL3,56,336,118,12,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GENREM3,182,336,118,12,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,10,0,0
+ PRODUCTVERSION 2,10,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "FileDescription", "rplsTOOL"
+            VALUE "FileVersion", "2.10.0.0"
+            VALUE "InternalName", "rplsTOOL.exe"
+            VALUE "OriginalFilename", "rplsTOOL.exe"
+            VALUE "ProductName", "rplsTOOL"
+            VALUE "ProductVersion", "2.10.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_RPLSTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 382
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "テキスト形式コピー",                   ID__MENU_TEXT
+        MENUITEM "項目名付テキスト形式コピー",               ID__MENU_ITEMNAME
+        MENUITEM "CSV形式コピー",                    ID__MENU_CSV
+        MENUITEM SEPARATOR
+        MENUITEM "ファイル名",                       ID__MENU_FNAME
+        MENUITEM "録画日付",                        ID__MENU_RECDATE
+        MENUITEM "録画時刻",                        ID__MENU_RECTIME
+        MENUITEM "録画期間",                        ID__MENU_DURTIME
+        MENUITEM "タイムゾーン",                      ID__MENU_TIMEZONE
+        MENUITEM "メーカーID",                      ID__MENU_MAKERID
+        MENUITEM "メーカー機種コード",                   ID__MENU_MODELCODE
+        MENUITEM "放送種別",                        ID__MENU_RECSRC
+        MENUITEM "放送局名",                        ID__MENU_CHNAME
+        MENUITEM "チャンネル番号",                     ID__MENU_CHNUM
+        MENUITEM "番組名",                         ID__MENU_PNAME
+        MENUITEM "番組内容",                        ID__MENU_PDETAIL
+        MENUITEM "内容詳細",                        ID__MENU_PEXTEND
+        MENUITEM "番組ジャンル",                      ID__MENU_PGENRE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "バージョン情報 rplsTOOL(&A)..."
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\rplstool.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "l.JPN\afxres.rc"      // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
