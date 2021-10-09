@@ -1000,7 +1000,7 @@ bool CrplstoolDlg::FileReadAndCheck(const WCHAR *filename)
 		}
 
 		src.filename = fname;
-		std::tr2::sys::path myfile(fname);
+		std::filesystem::path myfile(fname);
 		src.shortfname = myfile.filename().c_str();
 
 		CrplstoolDlg::ParamLoad();																							// rplsデータから番組情報の取得
@@ -1042,7 +1042,7 @@ bool CrplstoolDlg::FileReadAndCheck(const WCHAR *filename)
 	}
 
 	src.filename = fname;
-	std::tr2::sys::path myfile(fname);
+	std::filesystem::path myfile(fname);
 	src.shortfname = myfile.filename().c_str();
 
 	bak = src;
@@ -1770,7 +1770,7 @@ void CrplstoolDlg::LoadToolOptions()
 	opt.tsfilepos			= (int32_t)pApp->GetProfileInt(TOOLSECTION, NTSFILEPOS, DEFAULTTSFILEPOS);		// TSファイルから番組情報を取得する位置の指定
 	if(opt.tsfilepos > 99) opt.tsfilepos = DEFAULTTSFILEPOS;
 
-	opt.fontname			= pApp->GetProfileString(TOOLSECTION, STRFONTNAME, L"MS UI Gothic");			// エディットボックスに指定するフォント名
+	opt.fontname			= pApp->GetProfileString(TOOLSECTION, STRFONTNAME, L"Meiryo UI");			// エディットボックスに指定するフォント名
 	opt.fontsize			= (int32_t)pApp->GetProfileInt(TOOLSECTION, NFONTSIZE, 12);						// エディットボックスに指定するフォントサイズ
 
 	copyopt.bFName			= !!pApp->GetProfileInt(COPYSECTION, BFNAME,     TRUE);							// 右クリックのコピーメニュー各項目
