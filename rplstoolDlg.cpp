@@ -1771,7 +1771,7 @@ void CrplstoolDlg::LoadToolOptions()
 	if(opt.tsfilepos > 99) opt.tsfilepos = DEFAULTTSFILEPOS;
 
 	opt.fontname			= pApp->GetProfileString(TOOLSECTION, STRFONTNAME, L"Meiryo UI");			// エディットボックスに指定するフォント名
-	opt.fontsize			= (int32_t)pApp->GetProfileInt(TOOLSECTION, NFONTSIZE, 12);						// エディットボックスに指定するフォントサイズ
+	opt.fontsize			= (int32_t)pApp->GetProfileInt(TOOLSECTION, NFONTSIZE, 19);						// エディットボックスに指定するフォントサイズ
 
 	copyopt.bFName			= !!pApp->GetProfileInt(COPYSECTION, BFNAME,     TRUE);							// 右クリックのコピーメニュー各項目
 	copyopt.bRecDate		= !!pApp->GetProfileInt(COPYSECTION, BRECDATE,   TRUE);
