@@ -122,6 +122,7 @@ void CrplstoolDlg::DoDataExchange(CDataExchange* pDX)
 }
 
 BEGIN_MESSAGE_MAP(CrplstoolDlg, CDialog)
+	ON_WM_CTLCOLOR()
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
@@ -248,7 +249,32 @@ BOOL CrplstoolDlg::OnInitDialog()
 
 	LocalFree(args);															// CommandLineToArgvW()で確保されたメモリの開放
 
+	// 白のブラシを作成
+	brush.CreateSolidBrush(RGB(250, 250, 250));
+
 	return TRUE;  // フォーカスをコントロールに設定した場合を除き、TRUE を返します。
+}
+
+HBRUSH CrplstoolDlg::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
+{
+	switch(nCtlColor){
+
+		// ダイヤログの背景色を白に変更
+		case CTLCOLOR_DLG:
+			return (HBRUSH) brush;
+
+		// コントロールとテキストボックスの背景色を白に変更
+		case CTLCOLOR_STATIC:
+		case CTLCOLOR_EDIT:
+			pDC->SetBkMode(TRANSPARENT);
+			return (HBRUSH) brush;
+
+		default:
+			break;
+	}
+
+	// 既定のブラシを返す
+	return CDialog::OnCtlColor(pDC, pWnd, nCtlColor);
 }
 
 void CrplstoolDlg::OnSysCommand(UINT nID, LPARAM lParam)

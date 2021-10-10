@@ -28,6 +28,7 @@ protected:
 
 	// 生成された、メッセージ割り当て関数
 	virtual BOOL OnInitDialog();
+    afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 	afx_msg void OnSysCommand(UINT nID, LPARAM lParam);
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
@@ -46,6 +47,7 @@ private:
 	CopyOptions copyopt;
 	CFont font;
 	CString rplstoolpath;
+	CBrush brush;
 	void SetComboGenre(const int32_t*);
 	void SetComboGenreL(const int32_t, const int32_t, const int32_t);
 	void GetGenreStrL(const int32_t, CString&);
