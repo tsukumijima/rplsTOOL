@@ -250,7 +250,7 @@ BOOL CrplstoolDlg::OnInitDialog()
 	LocalFree(args);															// CommandLineToArgvW()で確保されたメモリの開放
 
 	// 白のブラシを作成
-	brush.CreateSolidBrush(RGB(250, 250, 250));
+	brush.CreateSolidBrush(RGB(253, 253, 253));
 
 	return TRUE;  // フォーカスをコントロールに設定した場合を除き、TRUE を返します。
 }
@@ -337,7 +337,7 @@ void CrplstoolDlg::OnBnClickedFselect()
 		if(result != IDOK) return;														// 確認ダイアログでキャンセルされたら中止して戻る
 	}
 
-	CString		ffilter(L"rpls files (*.rpls)|*.rpls|all files (*.*)|*.*||");
+	CString		ffilter(L"BDAV Real PlayList (*.rpls)|*.rpls|MPEG2-TS (*.ts;*.mts;*.m2t;*.m2ts)|*.ts;*.mts;*.m2t;*.m2ts|すべてのファイル (*.*)|*.*||");
 	CFileDialog	fSelDlg(TRUE, NULL, NULL, OFN_HIDEREADONLY, ffilter);
 
 	if( fSelDlg.DoModal() != IDOK ) return;												// ファイル選択ダイアログでキャンセルされたら戻る
