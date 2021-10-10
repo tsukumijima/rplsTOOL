@@ -176,6 +176,9 @@ BOOL CrplstoolDlg::OnInitDialog()
 
 	// TODO: 初期化をここに追加します。
 
+	// 白のブラシを作成
+	brush.CreateSolidBrush(RGB(253, 253, 253));
+
 	DragAcceptFiles(TRUE);
 
 	RECT	rect = {4, 8, 0, 0};
@@ -248,9 +251,6 @@ BOOL CrplstoolDlg::OnInitDialog()
 	}
 
 	LocalFree(args);															// CommandLineToArgvW()で確保されたメモリの開放
-
-	// 白のブラシを作成
-	brush.CreateSolidBrush(RGB(253, 253, 253));
 
 	return TRUE;  // フォーカスをコントロールに設定した場合を除き、TRUE を返します。
 }
