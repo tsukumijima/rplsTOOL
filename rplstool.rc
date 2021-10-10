@@ -170,11 +170,11 @@ BEGIN
         BLOCK "041103a4"
         BEGIN
             VALUE "FileDescription", "rplsTOOL"
-            VALUE "FileVersion", "2.10.0.0"
+            VALUE "FileVersion", "2.11.0.0"
             VALUE "InternalName", "rplsTOOL.exe"
             VALUE "OriginalFilename", "rplsTOOL.exe"
             VALUE "ProductName", "rplsTOOL"
-            VALUE "ProductVersion", "2.10.0.0"
+            VALUE "ProductVersion", "2.11.0.0"
         END
     END
     BLOCK "VarFileInfo"
