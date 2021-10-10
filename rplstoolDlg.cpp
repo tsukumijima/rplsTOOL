@@ -263,9 +263,13 @@ HBRUSH CrplstoolDlg::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
 		case CTLCOLOR_DLG:
 			return (HBRUSH) brush;
 
-		// コントロールとテキストボックスの背景色を白に変更
-		case CTLCOLOR_STATIC:
+		// テキストボックスの背景色を白に変更
 		case CTLCOLOR_EDIT:
+			pDC->SetBkColor(RGB(253, 253, 253));
+			return (HBRUSH) brush;
+
+		// コントロールの背景色を白に変更
+		case CTLCOLOR_STATIC:
 			pDC->SetBkMode(TRANSPARENT);
 			return (HBRUSH) brush;
 
